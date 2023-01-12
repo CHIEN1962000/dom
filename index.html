@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #scrollDemo {
+            height: 200px;
+            width: 200px;
+            overflow: auto;
+            background-color: #f0db4f
+        }
+
+        #scrollDemo p {
+            /* show the scrollbar */
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Phần 1</h2><br>
+    <button id="btn">Click me with any mouse button: left, right, middle, ...</button>
+    <p id="message"></p>
+    <br>
+    <h2>Phần 2</h2>
+    <br>
+    <div id="scrollDemo">
+        <p>JS Scroll Event Demo</p>
+    </div>
+    <div id="control">
+        <button id="btnScrollLeft">Scroll Left</button>
+        <button id="btnScrollTop">Scroll Top</button>
+    </div>
+
+    <script>
+    let control = document.querySelector('#control');
+
+    control.addEventListener('click', function (e) {
+        // Định vị phần tử scrollDemo
+        let div = document.getElementById('scrollDemo');
+        // Lấy ra biến target
+        let target = e.target;
+        // Xử lí sự kiện cuộn khi nút được nhấn
+        switch (target.id) {
+            case 'btnScrollLeft':
+            div.scrollLeft += 20;
+            break;
+
+            case 'btnScrollTop':
+            div.scrollTop += 20;
+            break;
+        }
+        });
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>
