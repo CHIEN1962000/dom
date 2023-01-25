@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="chinh">
+        <h1>ĐO CHỈ SỐ (BMI)</h1>
+        <div class="input-item">
+            <div class="input-1">
+                <label for="cc">Chiều Cao</label>
+                <input type="text" id="chieucao" name="cc" placeholder="Tính theo m">
+                <span id="mess"></span>
+            </div>
+
+            <div class="input-2">
+                <label for="cn">Cân Nặng</label>
+                <input type="text" id="cannang" name="cn" placeholder="Tính theo kg">
+                <span id="mess"></span>
+            </div>
+        </div>
+        <div class="the-radio">
+            <h3 style="font-weight: 400; font-size: 16px; margin-top: 10px;">Giới Tính</h3>
+            <div class="radio">
+                <input type="radio" name="gt" id="gt" value="nam">
+                <label for="nam">Nam</label>
+                
+                <input type="radio" name="gt" id="gt" value="nu" style="margin-left: 50px;">
+                <label for="gt">Nữ</label>
+            </div>  
+        </div>
+        <br>
+        <div class="btn">
+            <button id="nut">Tính BMI</button>
+        </div>
+        <div class="ketqua">
+            <label for="kq">Kết quả</label>
+            <input type="text" name="kq" id="dapso">
+        </div>
+
+    </form>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
