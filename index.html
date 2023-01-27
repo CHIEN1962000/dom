@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bao">
+            <form action="" id="my-form">
+                <h2 style="text-align: center;">Nhập thông tin khoản vay</h2>
+                <div class="list-tt-vay">
+                    <ol>
+                        <li>
+                            <div class="a">
+                                <label for="sotien" class="from-label">1) Số tiền:</label>
+                                <input type="text" class="from-input" name="sotien" id="input-1">
+                            </div>  
+                            <div style="width: 100%; text-align: right;">
+                                <span id="mess-1" style="color: red;"></span>
+                            </div>                 
+                        </li>
+                        <li>
+                            <div class="a">
+                                <label for="laisuat" class="from-label">2) Lãi suất hàng năm (%)</label>
+                                <input type="text" class="from-input" name="laisuat" id="input-2">
+                            </div>
+                            <div style="width: 100%; text-align: right;">
+                                <span id="mess-2" style="color: red;"></span>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class="a">
+                                <label for="tg-_tra" class="from-label">3) Thời gian trả (năm)</label>
+                                <input type="text" class="from-input" name="tg-_tra" id="input-3">
+                            </div>
+                            <div style="width: 100%; text-align: right;">
+                                <span id="mess-3" style="color: red;"></span>
+                            </div>    
+                        </li>
+                    </ol>
+                </div>
+
+                <div>
+                    <input type="submit" value="Tính" style="width: 80px; font-size: 20px; border-radius: 10px;" id="btn">
+                </div>
+
+                <div class="list-tt-thanhtoan">
+                    <h2 style="text-align: center;">Thông tin thanh toán</h2>
+                    <ol>
+                        <li>
+                            <div class="a">
+                                <label for="sotienphaitra" class="from-label">4) Số tiền phải trả hàng tháng:</label>
+                                <input type="text" class="from-input" name="sotienphaitra" id="input-4">
+                            </div>
+                            <span id="mess-4"></span>
+                        </li>
+                        <li>
+                            <div class="a">
+                                <label for="tongsotienphaitra" class="from-label">2) Tổng số tiền phải trả</label>
+                                <input type="text" class="from-input" name="tongsotienphaitra" id="input-5">
+                            </div>
+                            <span id="mess-5"></span>
+                        </li>
+                        <li>
+                            <div class="a">
+                                <label for="tongsolaiphaitra" class="from-label">3) Tổng số lãi phải trả</label>
+                                <input type="text" class="from-input" name="tongsolaiphaitra" id="input-6">
+                            </div>
+                            <span id="mess-6"></span>
+                        </li>
+                    </ol>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
